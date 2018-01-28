@@ -1,5 +1,11 @@
 <h1>Listing users</h1>
 
+<div style="margin:0 0 100px 0">
+  <%= form_for @user do |f| %>
+  <%= f.text_field :name, "data-autocomplete" => autocomplete_user_name_users_path %>
+  <% end %>
+</div>
+
 <table>
   <thead>
     <tr>
